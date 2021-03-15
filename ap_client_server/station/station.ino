@@ -78,19 +78,19 @@ void loop()
                 for (int i = 0; i < n; ++i) {
                     if (WiFi.SSID(i) == "ESP32-AP-1") {
                         rssi1 = rssi1 + String(WiFi.RSSI(i));
-                        rssi2 = rssi2 + String(random(-90,0));
-                        rssi3 = rssi3 + String(random(-90,0));
-                        rssi4 = rssi4 + String(random(-90,0));
+//                        rssi2 = rssi2 + String(random(-90,0));
+//                        rssi3 = rssi3 + String(random(-90,0));
+//                        rssi4 = rssi4 + String(random(-90,0));
                     } 
-                    // else if (WiFi.SSID(i) == "ESP32-AP-2") {
-                    //     rssi2 = rssi2 + String(WiFi.RSSI(i));  
-                    // }
-                    // else if (WiFi.SSID(i) == "ESP32-AP-3") {
-                    //     rssi3 = rssi3 + String(WiFi.RSSI(i));  
-                    // }
-                    // else if (WiFi.SSID(i) == "ESP32-AP-4") {
-                    //     rssi4 = rssi4 + String(WiFi.RSSI(i));  
-                    // }
+                     else if (WiFi.SSID(i) == "ESP32-AP-2") {
+                         rssi2 = rssi2 + String(WiFi.RSSI(i));  
+                     }
+                     else if (WiFi.SSID(i) == "ESP32-AP-3") {
+                         rssi3 = rssi3 + String(WiFi.RSSI(i));  
+                     }
+                     else if (WiFi.SSID(i) == "ESP32-AP-4") {
+                         rssi4 = rssi4 + String(WiFi.RSSI(i));  
+                     }
                 }
             }
             
